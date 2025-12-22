@@ -1,6 +1,6 @@
 [project]
-name = "games-project-Askarova"
-version = "0.1.2"
+name = "games_project_Askarova"
+version = "0.1.1"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -17,10 +17,11 @@ packages = ["VD_games"]
 
 [dependency-groups]
 dev = [
-
-    "ruff>=0.14.4",
+    "ruff>=0.14.2",
 ]
 
 [project.scripts]
-VD-games = "VD_games.scripts.VD_main:main"
+brain-games = "VD_games.scripts.VD_games:main"
 VD-even = "VD_games.scripts.VD_even:main"
+VD-calc = "VD_games.scripts.VD_calc:main"
+VD-gcd = "VD_games.scripts.VD_gcd:main"
